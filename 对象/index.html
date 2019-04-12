@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="cn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Document</title>
 </head>
 <body>
-    <script>
-        var chevy = {
-            make: 'chevy',
-            model: 'Bel Air',
-            year: 1975,
-            color: 'red',
-            passenger: 2,
-            convertible: false,
-            mileage: 1021,
-            showMake: function(){
-                document.wrtie(this.make)
-            },
-            changeColor: function(color){
-                this.color = color
-            }
-        }
-        chevy.changeColor('blue')
-        document.write(chevy.color)
-        //chevy.mileage += 100
-        //chevy.color('red')
-    </script>
+  <script>
+    var chevy = {
+      make: 'chevy',
+      model: 'Bel Air',
+      year: 1975,
+      color: 'red',
+      passengers: 2,
+      convertible: false,
+      mileage: 1021,
+      showMake: function(){
+        document.write(this.make)
+      },
+      changeColor: function(color){
+        this.color = color
+      }
+    }
+    //chevy.color('black')
+    chevy.changeColor('blue')
+    document.write(chevy.color)
+    //chevy.mileage += 100
+  </script>
 </body>
 </html>
